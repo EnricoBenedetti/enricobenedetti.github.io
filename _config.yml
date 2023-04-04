@@ -1,12 +1,11 @@
 layout: sidebar
 
-repository: EnricoBenedetti/enricobenedetti.github.io
 
 style: light
 theme: minima
 plugins:
   - jekyll-octicons
-  - jekyll-github-metadata
+  #- jekyll-github-metadata
   - jemoji
 
 permalink: /:year/:month/:day/:title/
@@ -31,9 +30,9 @@ projects:
     projects:
     # - repo-name
 
-# social_media:
+ social_media:
   
-  # linkedin: enribene
+   linkedin: enribene
   # mastodon: your_username
   # medium: your_username
   # stackoverflow: your_user_id
