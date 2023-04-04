@@ -3,7 +3,7 @@ layout: sidebar
 repository: EnricoBenedetti/enricobenedetti.github.io
 
 style: light
-theme: "no style, please"
+theme: no-style-please
 plugins:
   - jekyll-octicons
   - jekyll-github-metadata
