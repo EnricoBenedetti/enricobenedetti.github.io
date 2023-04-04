@@ -26,10 +26,11 @@ projects:
     archived: false
     forks: true
     projects:
-    # - repo-name
-# social_media:
-  
-  # linkedin: enribene
+    - EnricoBenedetti
+    - enricobenedetti.github.io
+social_media:
+  -
+    linkedin: enribene
   # mastodon: your_username
   # medium: your_username
   # stackoverflow: your_user_id
