@@ -1,6 +1,6 @@
 layout: sidebar
 
-
+repository: EnricoBenedetti/enricobenedetti.github.io
 style: light
 theme: minima
 plugins:
@@ -28,7 +28,7 @@ projects:
     archived: false
     forks: true
     projects:
-    # - repo-name
+     - EnricoBenedetti/enricobenedetti.github.io
 
  social_media:
   
