@@ -1,6 +1,4 @@
 layout: sidebar
-
-repository: EnricoBenedetti/enricobenedetti.github.io
 style: light
 theme: minima
 plugins:
@@ -9,7 +7,7 @@ plugins:
   - jemoji
 
 permalink: /:year/:month/:day/:title/
-
+repository: EnricoBenedetti/enricobenedetti.github.io
 defaults:
   -
     scope:
@@ -29,7 +27,7 @@ projects:
     forks: true
     projects:
      - enricobenedetti.github.io
-     - EnricoBenedetti
+    # - EnricoBenedetti
 
  social_media:
   
