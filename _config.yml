@@ -26,8 +26,8 @@ projects:
     archived: false
     forks: true
     projects:
-     - enricobenedetti.github.io
-    # - EnricoBenedetti
+      - enricobenedetti.github.io
+      - EnricoBenedetti
 
  social_media:
   
