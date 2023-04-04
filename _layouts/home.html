@@ -12,6 +12,10 @@
       {% include projects.html %}
     </div>
 
+    <div class="my-6">
+      {% include cv.html %}
+    </div>
+    
     {% if site.topics %}
       <div class="my-6">
         {% include interests.html %}
@@ -39,6 +43,10 @@
         {% endunless %}
 
         {% include projects.html %}
+        
+
+        {% include cv.html %}
+
 
         {% if site.topics %}
           {% include interests.html %}
@@ -52,7 +60,5 @@
   </div>
 {% endif %}
 
-<iframe style="border:none;" title="CV" src="chatcv.pdf" width="90%" height="500px">
-    </iframe>
 
 {% include footer.html %}
