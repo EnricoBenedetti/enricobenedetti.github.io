@@ -1,11 +1,11 @@
 layout: sidebar
 
-
+repository: EnricoBenedetti/CVRP
 style: light
 theme: minima
 plugins:
   - jekyll-octicons
-  #- jekyll-github-metadata
+  - jekyll-github-metadata
   - jemoji
 
 permalink: /:year/:month/:day/:title/
