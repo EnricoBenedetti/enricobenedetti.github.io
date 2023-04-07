@@ -2,7 +2,7 @@ layout: sidebar
 
 repository: EnricoBenedetti/enricobenedetti.github.io
 
-style: light
+style: dark
 theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-octicons
