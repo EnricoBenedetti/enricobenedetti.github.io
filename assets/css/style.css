@@ -1,26 +1,23 @@
 /* CSS files add styling rules to your content */
 
 body, html {
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Frutiger', sans-serif;
+  font-weight: 400;                                        
   margin: 0px;
   background-color: transparent
 }
 
-h1 {
+/* h1 {
   font-style: italic;
   color: #64a2d8;
-}
+} */
 
-h3 {
-  font-size: 18px;
-  letter-spacing: -.025em;
-}
 
 .jp {
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
 }
 
-#tabs {
+/* #tabs {
   background-color: transparent
 }
 
@@ -30,7 +27,7 @@ h3 {
 
 #tabs>ul {
   background-color: transparent
-}
+} */
 
 .bg {
   z-index: -1;
@@ -39,4 +36,109 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.window { 
+  /* background-color: #70db70; */
+  background: #ece9d8;
+  border: 2px solid #0554d2;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px rgba(3, 64, 156, 0.1);
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  margin: 5px 0px 5px 0px; ;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row;
+  -moz-box-pack: center;
+  place-content: center;
+  -moz-box-align: center;
+  align-items: center;
+  padding: 10px;
+  margin: auto;
+}
+
+.title-bar {
+  background: linear-gradient(180deg,#15e312,#0fdd13 8%,#25e83c 40%,#06f 88%,#06f 93%,#005bff 95%,#003dd7 96%,#003dd7);
+  padding: 3px 5px 3px 3px;
+  /* border-top: 2px solid #04ca04;
+  border-left: 2px solid #34c065;
+  border-right: 2px solid #29c574;*/
+  border-radius: 6px 6px 0px 0px;
+  font-size: 13px;
+  text-shadow: 1px 1px #059559;
+  height: 21px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper .title-bar-text {
+  display: flex;
+  flex-flow: row;
+  -moz-box-pack: start;
+  place-content: stretch flex-start;
+  -moz-box-align: center;
+  align-items: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0px;
+}
+
+.center {
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.wrapper .window {
+  font-size: 10pt;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  -moz-box-pack: justify;
+  place-content: stretch space-between;
+  -moz-box-align: stretch;
+  break-inside: avoid;
+  width: 300px;
+  align-items: stretch;
+}
+
+
+@media only screen and (min-width: 682px) {
+ .wrapper .windows {
+    column-count: 2;
+  }
+}
+
+@media only screen and (min-width: 1023px) {
+ .wrapper .windows {
+    column-count: 3;
+  }
+}
+
+@media only screen and (min-width: 1364px) {
+  .wrapper .windows {
+    column-count: 4;
+  }
+}
+
+.window-body {
+  margin: 8px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 10px;
+  color: #000;
+  margin-top: 30px;
+  margin-bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  width: 12%;
+  border-radius: 8px;
 }
