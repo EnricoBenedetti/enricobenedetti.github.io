@@ -81,9 +81,6 @@ body, html {
   align-items: stretch;
 }
 
-.window--wide {
-  column-span: 2;
-}
 
 
 .window-body {
@@ -116,5 +113,11 @@ body, html {
 @media only screen and (min-width: 1364px) {
   .wrapper {
     column-count: 4;
+  }
+}
+
+@media only screen and (min-width: 1023px) {
+  .window--wide {
+    column-span: 2;
   }
 }
