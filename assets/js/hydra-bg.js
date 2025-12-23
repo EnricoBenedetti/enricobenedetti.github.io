@@ -5,7 +5,7 @@ var hydra = new Hydra({
 })
 
 //hydra.loadScript("https://cdn.statically.io/gl/metagrowing/extra-shaders-for-hydra/main/lib/lib-screen.js").then(xp_background)
-hydra.loadScript("assets/js/lib-screen.js").then(xp_background)
+hydra.loadScript("/assets/js/lib-screen.js").then(xp_background)
 
 function animation() {
   //s0.initImage("/static/assets/DSC00079_lowq.png")
