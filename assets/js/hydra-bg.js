@@ -5,7 +5,8 @@ var hydra = new Hydra({
 });
 
 //hydra.loadScript("https://cdn.statically.io/gl/metagrowing/extra-shaders-for-hydra/main/lib/lib-screen.js").then(xp_background)
-hydra.loadScript("/assets/js/lib-screen.js").then(xp_background);
+// hydra.loadScript("/assets/js/lib-screen.js").then(xp_background);
+// console.log("hydra-bg.js loaded");
 
 function animation() {
   //s0.initImage("/static/assets/DSC00079_lowq.png")
@@ -34,3 +35,13 @@ function xp_background() {
   src(o0).modulate(src(o2), 0.001).out(o1)
   render(o1)
 }
+
+
+async function initHydra() {
+  await hydra.loadScript("/assets/js/lib-screen.js");
+  console.log("lib-screen.js loaded");
+
+  xp_background();
+}
+
+initHydra();
