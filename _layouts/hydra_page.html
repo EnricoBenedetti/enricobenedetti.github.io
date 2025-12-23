@@ -130,9 +130,6 @@
         </div>
       </div>
 
-
-
-      <!-- <img src="/static/assets/portrait_small.png" style="-ms-interpolation-mode: bilinear; width: 65%;" alt="me"> -->
       <div id="posts">
         <div class="window">
           <div class="title-bar">
@@ -150,7 +147,7 @@
         </div>
       </div>
 
-      <div id="cv">
+      <div id="bgm">
         <div class="window">
           <div class="title-bar">_Music</div>
           <div class="window-body">
@@ -163,22 +160,24 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
 
 
+  {% include footer.html %}
 
-    {% include footer.html %}
+  <!-- import the scripts used for the background -->
 
-    <!-- import the scripts used for the background -->
+  <script src="/assets/js/hydra-bg.js"></script>
+  <script src="/assets/js/lib-screen.js"></script>
+  <script src="/assets/js/content_change.js"></script>
 
-    <script src="/assets/js/hydra-bg.js"></script>
-    <!-- <script src="assets/js/content_change.js"></script> -->
+  <!-- import the music script -->
+  <script src="/assets/js/bgm.js"></script>
 
-    <!-- import the music script -->
-    <script src="/assets/js/bgm.js"></script>
-
-    <!-- import animated title script -->
-    <script src="/assets/js/animate_title.js"></script>
+  <!-- import animated title script -->
+  <script src="/assets/js/animate_title.js"></script>
 </body>
 
 </html>
