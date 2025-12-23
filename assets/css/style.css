@@ -1,37 +1,15 @@
-/* CSS files add styling rules to your content */
-
 body, html {
   font-family: 'Frutiger', sans-serif;
-  /* font-family: 'Roboto', sans-serif; */
   font-weight: 400;
   font-size: 15px;
   line-height: 1.1;
-  /* letter-spacing: 0.02em;                         */
   margin: 0px;
   background-color: transparent
 }
 
-/* h1 {
-  font-style: italic;
-  color: #64a2d8;
-} */
-
-
 .jp {
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
 }
-
-/* #tabs {
-  background-color: transparent
-}
-
-#cv>div>div {
-  text-align: center;
-}
-
-#tabs>ul {
-  background-color: transparent
-} */
 
 .bg {
   z-index: -1;
@@ -43,7 +21,6 @@ body, html {
 }
 
 .window { 
-  /* background-color: #70db70; */
   background: #ece9d8;
   border: 2px solid #0554d2;
   border-radius: 8px;
@@ -52,15 +29,13 @@ body, html {
   padding-right: 0px;
   padding-bottom: 5px;
   padding-left: 0px;
-  margin: 5px 0px 5px 0px; ;
+  margin: 5px 0px 5px 0px;
 }
 
 .wrapper {
   display: flex;
-  flex-flow: row;
-  -moz-box-pack: center;
+  flex-flow: row wrap;
   place-content: center;
-  -moz-box-align: center;
   align-items: center;
   padding: 10px;
   margin: auto;
@@ -69,9 +44,6 @@ body, html {
 .title-bar {
   background: linear-gradient(180deg,#15e312,#0fdd13 8%,#25e83c 40%,#06f 88%,#06f 93%,#005bff 95%,#003dd7 96%,#003dd7);
   padding: 3px 5px 3px 3px;
-  /* border-top: 2px solid #04ca04;
-  border-left: 2px solid #34c065;
-  border-right: 2px solid #29c574;*/
   border-radius: 6px 6px 0px 0px;
   font-size: inherit;
   text-shadow: 1px 1px #059559;
@@ -84,9 +56,7 @@ body, html {
 .wrapper .title-bar-text {
   display: flex;
   flex-flow: row;
-  -moz-box-pack: start;
   place-content: stretch flex-start;
-  -moz-box-align: center;
   align-items: center;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -103,31 +73,16 @@ body, html {
   box-sizing: border-box;
   display: flex;
   flex-flow: column;
-  -moz-box-pack: justify;
   place-content: stretch space-between;
-  -moz-box-align: stretch;
   break-inside: avoid;
   width: 300px;
+  flex: 0 0 300px;
   align-items: stretch;
 }
 
-
-@media only screen and (min-width: 682px) {
- .wrapper .windows {
-    column-count: 2;
-  }
-}
-
-@media only screen and (min-width: 1023px) {
- .wrapper .windows {
-    column-count: 3;
-  }
-}
-
-@media only screen and (min-width: 1364px) {
-  .wrapper .windows {
-    column-count: 4;
-  }
+.wrapper .window--wide {
+  width: 600px;
+  flex: 0 0 600px;
 }
 
 .window-body {
