@@ -2,7 +2,10 @@
 
 body, html {
   font-family: 'Frutiger', sans-serif;
-  font-weight: 400;                                        
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;                        
   margin: 0px;
   background-color: transparent
 }
@@ -97,7 +100,6 @@ body, html {
 }
 
 .wrapper .window {
-  font-size: 10pt;
   box-sizing: border-box;
   display: flex;
   flex-flow: column;
