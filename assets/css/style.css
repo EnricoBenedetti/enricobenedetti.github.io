@@ -39,6 +39,7 @@ body, html {
   align-items: center;
   padding: 10px;
   margin: auto;
+  column-gap: 10px;
 }
 
 .title-bar {
@@ -80,10 +81,10 @@ body, html {
   align-items: stretch;
 }
 
-.wrapper .window--wide {
-  width: 600px;
-  flex: 0 0 600px;
+.window--wide {
+  column-span: 2;
 }
+
 
 .window-body {
   margin: 8px;
@@ -98,4 +99,22 @@ body, html {
   background: rgba(255, 255, 255, 0.8);
   width: 12%;
   border-radius: 8px;
+}
+
+@media only screen and (min-width: 682px) {
+  .wrapper {
+    column-count: 2;
+  }
+}
+
+@media only screen and (min-width: 1023px) {
+  .wrapper {
+    column-count: 3;
+  }
+}
+
+@media only screen and (min-width: 1364px) {
+  .wrapper {
+    column-count: 4;
+  }
 }
