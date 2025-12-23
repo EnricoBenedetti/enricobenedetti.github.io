@@ -55,16 +55,22 @@
       </div>
 
 
-       <div id="about">
-        <div class="window window--wide">
+      <div id="portrait">
+        <div class="window">
           <div class="title-bar">
             <div class="title-bar-text">
               Photo</div>
           </div>
 
+
+
+
           <div class="window-body">
-            <img src="/assets/images/portrait.png" alt="me" style="max-width: 100%;">
-              > ...this is me!
+            <img src="/assets/images/portrait.png" id="portrait" alt="me" class="zoomable-img" style="max-width: 100%;">
+            > ...this is me!
+            <div id="overlay">
+              <img id="overlayPortrait" />
+            </div>
           </div>
         </div>
       </div>
@@ -75,8 +81,8 @@
           <div class="title-bar-text">This page will always be under construction!</div>
         </div>
         <div class="window-body">
-          <div class="center" style="display:flex; align-items: center; margin-left: 15px; margin-right: 15px"><img src="/assets/images/underconstructionsorry.gif" alt="under construction"
-              width="50px">
+          <div class="center" style="display:flex; align-items: center; margin-left: 15px; margin-right: 15px"><img
+              src="/assets/images/underconstructionsorry.gif" alt="under construction" width="50px">
             <img class="center" src="/assets/images/underconstructionsorry.gif" alt="under construction" width="50px">
             <img src="/assets/images/underconstructionsorry.gif" alt="under construction" width="50px">
           </div>
@@ -100,7 +106,7 @@
         <div class="window" style="background-color: white;">
           <div class="title-bar">Curriculum Vitae</div>
 
-          <div class="center window-body" >
+          <div class="center window-body">
             <a href="cv.pdf" target="_blank">
               <img src="/assets/images/download.gif" alt="Download">Download my cv here!<img
                 src="/assets/images/download.gif" alt="Download">
@@ -162,7 +168,8 @@
   <script src="assets/js/{{ hydra_script }}"></script>
   <script src="assets/js/content_change.js"></script>
 
-
+ <!-- import zoomable image script -->
+  <script src="/assets/js/overlay_img.js"></script>
 
   <!-- import animated title script -->
   <script src="/assets/js/animate_title.js"></script>
