@@ -21,6 +21,9 @@
   <!-- import the latest version of hydra synth -->
   <script src="https://unpkg.com/hydra-synth"></script>
 
+  <!-- import strudel web for background music -->
+  <script src="https://unpkg.com/@strudel/web@1.0.3"></script>
+
   <!-- import tabs scripts -->
   <!-- <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script> -->
@@ -147,22 +150,39 @@
         </div>
       </div>
 
+      <div id="cv">
+        <div class="window">
+          <div class="title-bar">_Music</div>
+
+          <div class="window-body">
+            play background music generated with <a target="_blank"
+              href="https://strudel.cc/workshop/getting-started/">strudel</a>. <br> <br>
+            <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+              <button id="play">play</button>
+              <button id="stop">stop</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
 
-  {% include footer.html %}
-
-  <!-- import the scripts used for the background -->
-
-  {% assign hydra_script = "hydra-bg.js" %}
-
-  <script src="assets/js/{{ hydra_script }}"></script>
-  <!-- <script src="assets/js/content_change.js"></script> -->
 
 
-  <!-- import animated title script -->
-  <script src="/assets/js/animate_title.js"></script>
+    {% include footer.html %}
+
+    <!-- import the scripts used for the background -->
+
+    {% assign hydra_script = "hydra-bg.js" %}
+
+    <script src="assets/js/{{ hydra_script }}"></script>
+    <!-- <script src="assets/js/content_change.js"></script> -->
+
+    <!-- import the music script -->
+    <script src="/assets/js/bgm.js"></script>
+
+    <!-- import animated title script -->
+    <script src="/assets/js/animate_title.js"></script>
 </body>
 
 </html>
