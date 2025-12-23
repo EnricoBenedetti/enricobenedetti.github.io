@@ -2,10 +2,11 @@
 
 body, html {
   font-family: 'Frutiger', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.1;
-  letter-spacing: 0.02em;                        
+  /* letter-spacing: 0.02em;                         */
   margin: 0px;
   background-color: transparent
 }
@@ -72,9 +73,9 @@ body, html {
   border-left: 2px solid #34c065;
   border-right: 2px solid #29c574;*/
   border-radius: 6px 6px 0px 0px;
-  font-size: 13px;
+  font-size: inherit;
   text-shadow: 1px 1px #059559;
-  height: 21px;
+  height: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -90,7 +91,6 @@ body, html {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  padding: 0px;
 }
 
 .center {
@@ -136,7 +136,7 @@ body, html {
 
 .footer {
   text-align: center;
-  font-size: 10px;
+  font-size: 11px;
   color: #000;
   margin-top: 30px;
   margin-bottom: 0;
