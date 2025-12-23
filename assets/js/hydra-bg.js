@@ -38,10 +38,7 @@ function xp_background() {
 
 
 async function initHydra() {
-  await hydra.loadScript("/assets/js/lib-screen.js");
-  console.log("lib-screen.js loaded");
-
-  xp_background();
+  hydra.loadScript("/assets/js/lib-screen.js").then(xp_background);
 }
 
 initHydra();
